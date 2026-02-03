@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text-Only Shopping Website</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1115;
+      --fg: #e8eaf0;
+      --muted: #a4a9b6;
+      --accent: #9ad0ff;
+      --panel: #1a1f2b;
+      --border: #2c3446;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    h2 {
+      margin-top: 32px;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      color: var(--fg);
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .divider {
+      border-top: 1px dashed var(--border);
+      margin: 24px 0;
+    }
+
+    .highlight {
+      color: var(--fg);
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Text-Only Shopping Website</h1>
+    <p>Product: <span class="highlight">Solar Weave Modular Dress</span> — a fully text-based catalog experience.</p>
+    <p>SKU: SWM-24-AX | Collection: Urban Equinox | Availability: Limited batch</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Product Customization &amp; Features</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Colour selector</dt>
+            <dd>Midnight Navy, Ember Rust, Cloud Grey, Olive Sand, and Onyx Black.</dd>
+            <dt>Size range</dt>
+            <dd>S, M, L, XL, XXL, XXXL with inclusive grading.</dd>
+            <dt>Design pattern</dt>
+            <dd>Linear paneling with contour-stitched seams.</dd>
+            <dt>Multi-colours pattern</dt>
+            <dd>Two-tone blocks with micro-contrast stitching.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Suitable colour and item according to skin color and face, size</dt>
+            <dd>Warm undertones: Ember Rust/Olive Sand; cool undertones: Midnight Navy/Cloud Grey; neutral: Onyx Black. Taller frames shine in longline silhouettes; petite builds benefit from cropped hem options.</dd>
+            <dt>Item essentials for this season</dt>
+            <dd>Layer-ready mock neck, detachable belt, and breathable inner lining.</dd>
+            <dt>Mood the outfit gives</dt>
+            <dd>Confident, grounded, and intentionally minimalist.</dd>
+            <dt>Personality type it suits</dt>
+            <dd>Architect, strategist, and creative-professional archetypes.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Introvert or extrovert friendly style</dt>
+            <dd>Balanced: sleek enough for quiet confidence, but bold paneling for statement moments.</dd>
+            <dt>Professional vs casual balance</dt>
+            <dd>70% professional / 30% casual.</dd>
+            <dt>Confidence boost level</dt>
+            <dd>High — tailored seams and structured drape.</dd>
+            <dt>Minimalist or statement piece rating</dt>
+            <dd>Minimalist 7/10, Statement 4/10.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Detailed Price Breakdown</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Price of making</dt>
+            <dd>$38.00</dd>
+            <dt>Price of material</dt>
+            <dd>$42.50</dd>
+            <dt>Price of packing</dt>
+            <dd>$6.25</dd>
+            <dt>Price of accessories added to the dress</dt>
+            <dd>$9.80</dd>
+            <dt>Price of tax</dt>
+            <dd>$12.10</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Price of delivery</dt>
+            <dd>$8.60</dd>
+            <dt>Price of maintenance</dt>
+            <dd>$4.35</dd>
+            <dt>Total price</dt>
+            <dd class="highlight">$121.60</dd>
+            <dt>Materials price each</dt>
+            <dd>Outer shell $24.00, Lining $10.50, Thread &amp; trims $8.00.</dd>
+            <dt>Labor hours per item</dt>
+            <dd>3.4 hours</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Cost per wear estimate</dt>
+            <dd>$2.70 over 45 wears.</dd>
+            <dt>Cost vs market average comparison</dt>
+            <dd>8% below premium market average for comparable construction.</dd>
+            <dt>Price increase history</dt>
+            <dd>+4% (2023), +3% (2024) due to yarn sourcing.</dd>
+            <dt>Why this price is justified</dt>
+            <dd>Uses long-staple cotton blend, dual QC, and fair wage premiums.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Production &amp; Origin</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Date of batch manufacture</dt>
+            <dd>2024-08-18</dd>
+            <dt>Cloth type and manufactured place</dt>
+            <dd>Long-staple cotton blend milled in Porto, Portugal.</dd>
+            <dt>Layers of cloth involved</dt>
+            <dd>Two layers: outer shell + soft brushed lining.</dd>
+            <dt>Electricity consumed per item</dt>
+            <dd>3.2 kWh</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Defect rate in this batch</dt>
+            <dd>1.6%</dd>
+            <dt>Quality check stages passed</dt>
+            <dd>Pattern grading, seam inspection, finishing audit.</dd>
+            <dt>Manufacturing difficulty level</dt>
+            <dd>Medium-high (7/10)</dd>
+            <dt>Automation vs manual work percentage</dt>
+            <dd>30% automation / 70% manual.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Worker skill level involved</dt>
+            <dd>Advanced tailoring team (Level 3).</dd>
+            <dt>Fair wage compliance</dt>
+            <dd>Certified living-wage facility.</dd>
+            <dt>Local vs outsourced production</dt>
+            <dd>80% local, 20% specialized outsourcing.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Material Quality &amp; Durability</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Expected fabric shrinkage after wash</dt>
+            <dd>2%</dd>
+            <dt>Stitch durability rating</dt>
+            <dd>9/10</dd>
+            <dt>Average lifespan of the garment</dt>
+            <dd>5-6 years with standard care.</dd>
+            <dt>Color fade level after washes</dt>
+            <dd>Low (1.5/5)</dd>
+            <dt>Breathability level</dt>
+            <dd>High</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Sweat absorption level</dt>
+            <dd>Medium-high</dd>
+            <dt>Weight of the garment</dt>
+            <dd>620g</dd>
+            <dt>Softness scale</dt>
+            <dd>8/10</dd>
+            <dt>Stretch level</dt>
+            <dd>Moderate (4% mechanical stretch)</dd>
+            <dt>Wrinkle resistance</dt>
+            <dd>Medium-high</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Ironing difficulty level</dt>
+            <dd>Low (2/10)</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Usage &amp; Suitability</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Suitable for what circumstances?</dt>
+            <dd>Office wear, galleries, travel days, and semi-formal events.</dd>
+            <dt>Occasions specific items</dt>
+            <dd>Pair with ankle boots for openings or flats for daytime meetings.</dd>
+            <dt>Summer, winter, all-season rating</dt>
+            <dd>All-season (lined for cool weather).</dd>
+            <dt>Suitable body movement level</dt>
+            <dd>Comfortable for walking, sitting long hours, and moderate travel.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Loose fit or body fit description</dt>
+            <dd>Structured body fit with adjustable waist.</dd>
+            <dt>Chest, waist, shoulder tolerance range</dt>
+            <dd>Chest ±6 cm, Waist ±8 cm, Shoulder ±4 cm.</dd>
+            <dt>Height range best suited</dt>
+            <dd>155 cm to 185 cm.</dd>
+            <dt>Body type suitability</dt>
+            <dd>Slim, average, and broad frames.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Common size mistakes buyers made</dt>
+            <dd>Choosing a size down for a tighter waist.</dd>
+            <dt>Recommendation if between two sizes</dt>
+            <dd>Size up if you prefer layering; size down for crisp tailoring.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Care &amp; Maintenance</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Care instructions</dt>
+            <dd>Cold wash, gentle cycle, low-spin. Line dry. Warm iron on reverse.</dd>
+            <dt>Drying time</dt>
+            <dd>6-8 hours (line dry).</dd>
+            <dt>Storage recommendation</dt>
+            <dd>Hang with padded hanger; store away from direct sunlight.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Sustainability &amp; Ethics</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Water used per item</dt>
+            <dd>45 liters</dd>
+            <dt>Carbon footprint estimate</dt>
+            <dd>8.1 kg CO₂e</dd>
+            <dt>Recyclability of fabric</dt>
+            <dd>65% recyclable with textile drop-off.</dd>
+            <dt>Biodegradability time</dt>
+            <dd>18-24 months in industrial composting.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Customer Insights &amp; Engagement</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>People age range who purchased</dt>
+            <dd>22-44</dd>
+            <dt>Current people views, likes, purchased</dt>
+            <dd>12,480 views / 2,140 likes / 620 purchases</dd>
+            <dt>Sharing the item</dt>
+            <dd>Share rate 9.4%</dd>
+            <dt>Return rate percentage for this item</dt>
+            <dd>4.2%</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Common complaints from buyers</dt>
+            <dd>Runs snug at the shoulders for athletic builds.</dd>
+            <dt>Peak purchase hours</dt>
+            <dd>19:00 - 22:00 local time.</dd>
+            <dt>Cities where it sells most</dt>
+            <dd>New York, Toronto, Berlin, Tokyo.</dd>
+            <dt>Repeat buyers percentage</dt>
+            <dd>36%</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>First-time buyers percentage</dt>
+            <dd>64%</dd>
+            <dt>Seasonal demand trend</dt>
+            <dd>Highest in early autumn and late spring.</dd>
+            <dt>Stock remaining count</dt>
+            <dd>214 units</dd>
+            <dt>Restock probability</dt>
+            <dd>Medium (next cycle in 8 weeks).</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Styling Advice</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Color theory guide</dt>
+            <dd>Pair warm with warm, cool with cool, and use neutrals to soften contrast.</dd>
+            <dt>What colors pair best with this</dt>
+            <dd>Ivory, charcoal, rust, muted teal.</dd>
+            <dt>What not to pair with this</dt>
+            <dd>Neon tones or loud patterns that clash with paneling.</dd>
+            <dt>Accessories that enhance it</dt>
+            <dd>Minimal cuff bracelet, matte belt, structured tote.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Footwear compatibility</dt>
+            <dd>Leather loafers, ankle boots, or crisp sneakers.</dd>
+            <dt>Outerwear compatibility</dt>
+            <dd>Long trench, wool coat, cropped bomber.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="panel">
+      <h2>Safety &amp; Warnings</h2>
+      <div class="grid">
+        <div>
+          <dl>
+            <dt>Skin irritation risk</dt>
+            <dd>Low (OEKO-TEX certified dyes).</dd>
+            <dt>Allergy warning</dt>
+            <dd>Contains 2% elastane; patch test if sensitive.</dd>
+            <dt>Button or accessory choking risk</dt>
+            <dd>Not suitable for children under 3.</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>Heat retention risk</dt>
+            <dd>Moderate in humid environments.</dd>
+            <dt>Slipperiness when wet</dt>
+            <dd>Low, textured lining provides grip.</dd>
+            <dt>Sharp accessory edges warning</dt>
+            <dd>Keep metallic clasp away from delicate fabrics.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Need help? Email text-only concierge at <a href="mailto:hello@solarweave.example">hello@solarweave.example</a></p>
+  </footer>
+</body>
+</html>
